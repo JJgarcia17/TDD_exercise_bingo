@@ -4,12 +4,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Scr\\App\\": "scr/app/"
+            "Scr\\App\\": "scr/app/",
+            "App\\Controllers\\": "app/Controllers/",
+            "App\\Models\\": "app/Models/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "scr/tests/"
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit tests" 
     }
 }
